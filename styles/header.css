@@ -7,14 +7,16 @@
 }
 
 .header-inner{
-  background-color: antiquewhite;
+  background-color: transparent;
+  border: 1px white solid;
+  border-radius: 100px;
  
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
 
   display : flex;
   align-items: center;
-  padding : 13px 32px;
+  padding : 10px 32px;
 }
 
 .left-section, .right-section{
@@ -33,13 +35,76 @@
   justify-content: flex-end;
 }
 
+.right-section-mob{
+  display: none; 
+}
+
 .middle-section{
   flex : 3;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
 }
 
+@media (max-width: 768px){
+  .header-inner{
+    background-color: transparent;
+    border: 1px white solid;
+    border-radius: 100px;
+  
+    max-width: 600px;
+    margin: 0 auto;
+
+    display : flex;
+    align-items: center;
+    padding : 10px 32px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .middle-section{
+    position: fixed;
+    top: 90px;         /* below header */
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+
+    padding: 5px 35px;
+    display: none;
+
+  }
+
+  .middle-section.open{
+    display: flex;
+  }
+
+  .right-section{
+    display: none;
+  }
+  .header-inner{
+    display: flex;
+
+    background-color: none;
+    border: none;
+  }
+
+
+  .right-section-mob{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ham-logo{
+    width: 30px;
+  }
+}
 

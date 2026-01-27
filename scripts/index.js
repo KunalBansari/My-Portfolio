@@ -6,7 +6,7 @@ ham.addEventListener('click', () =>{
 
 // code for making and rendering the slider
 let activeindex = 0;
-const cards = document.querySelectorAll('.container');
+const cards = document.querySelectorAll('.project-card-container');
 const totalcards = cards.length;
 const prevBtn = document.getElementById("img-left-arrow");
 const nextBtn = document.getElementById("img-right-arrow");

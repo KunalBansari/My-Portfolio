@@ -6,7 +6,7 @@ ham.addEventListener('click', () =>{
 
 // code for making and rendering the slider
 let activeindex = 0;
-const cards = document.querySelectorAll('.project-card-container');
+const cards = document.querySelectorAll('.project-card');
 const totalcards = cards.length;
 const prevBtn = document.getElementById("img-left-arrow");
 const nextBtn = document.getElementById("img-right-arrow");
@@ -49,12 +49,12 @@ function updateSliderUI() {
 
   // Button logic
   nextBtn.addEventListener("click", () => {
-    activeindex = (activeindex + 1) % totalcards;
+    activeindex = (activeindex - 1) % totalcards;
     updateSliderUI();
   });
 
   prevBtn.addEventListener("click", () => {
-    activeindex = (activeindex - 1 ) % totalcards;
+    activeindex = (activeindex + 1 ) % totalcards;
     updateSliderUI();
   });
 

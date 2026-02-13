@@ -1,0 +1,78 @@
+.contact{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 100px;
+}
+
+.contact-section.top{
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 150px;
+}
+
+.text-contact-top{
+  font-size: 100px;
+}
+
+.line-contact-top {
+  width: 1000px;
+  height: 2px;
+  vertical-align: middle;
+  background-color: aliceblue;
+}
+
+.contact-section.middle{
+  width: 100%;
+  max-width: 1200px;
+
+  display: flex;
+  row-gap: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lets-talk-section{
+  font-size: 40px;
+}
+
+.connect-section{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 80px;
+}
+
+.greeting-section{
+  padding-bottom: 50px;
+}
+
+.navigate-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.navigation-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.back-icon{
+  width: 25px;
+}
+
+.navigate-text{
+  font-size: 12px;
+}

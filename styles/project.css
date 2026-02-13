@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  /* gap: 24px; */
 }
 
 .left-arrow, .right-arrow{
@@ -24,63 +24,58 @@
 .viewport{
   width: 100%;
   max-width: 1000px;
+  height: 520px;     /* MUST match card area */
   display: flex;
   align-items: center;
 
-  /* position: relative; */
+  position: relative;
   /* make the child conatiner position related to the viewport or parent */
   /* using relative only, page feels like it is still there even if it is moved */
 }
 
-.project-card-container{
-  /* make the child position according to the container */
-  /* dont reserve space on page rather floats */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-
 .project-card{
+  left: 35%;
+  position: absolute;
+  
+  
   width: clamp(100px, 50vw, 300px);
   background-color: antiquewhite;
   display: flex;
   flex-direction: column;
-
+  
   justify-content: center;
   align-items: flex-start;
-
+  
   border-radius: 40px;
   padding: 20px 20px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.25);  
-
-}
-
-.project-card-2{
-  background-color: aqua;
+  
 }
 
 .role-center {
-  transform: translate(-150px, -10px) scale(1);
+  transform: scale(1);
+  
   opacity: 1;
   z-index: 3;
   
 }
 
 .role-left {
-  transform:  translate(-140px, -10px) translateX(-250px) scale(0.85);
+  transform: translate(-250px) scale(0.85);
   opacity: 0.6;
   z-index: 2;
 }
 
 .role-right {
-  transform: translate(-160px, -10px) translateX(250px) scale(0.85);
+  transform: translate(250px)scale(0.85);
   opacity: 0.6;
   z-index: 2;
 }
+
 
 .role-hidden {
   transform: scale(0);
   opacity: 0;
   z-index: 1;
   pointer-events: none;
-}
+}   

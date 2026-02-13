@@ -20,9 +20,24 @@ main{
 }
 
 section{
-  padding: 80px 0;
   border: 1px gray solid;
 }
 
+/* .project {
+  outline: 3px solid red;
+  min-height: 600px;
+  background-color: red;
+}
+
+.skills{
+  outline: 3px solid blue;
+  position: relative;
+  background-color: blue;
+} */
+
+.project { outline: 3px solid red; }
+.viewport { outline: 3px solid yellow; }
+.project-card-container { outline: 3px solid green; }
+.skills { outline: 3px solid blue; }
 
 

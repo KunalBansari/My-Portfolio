@@ -5,7 +5,7 @@ html, body{
   margin: 0;
 
   background-color: rgb(245, 245, 246);
-  background-color: black;
+  background-color: rgb(17 17 17);
   
   font-family:  poppins;
   color:white;
@@ -18,26 +18,3 @@ html, body{
 main{
   padding-top: 120px;
 }
-
-section{
-  border: 1px gray solid;
-}
-
-/* .project {
-  outline: 3px solid red;
-  min-height: 600px;
-  background-color: red;
-}
-
-.skills{
-  outline: 3px solid blue;
-  position: relative;
-  background-color: blue;
-} */
-
-.project { outline: 3px solid red; }
-.viewport { outline: 3px solid yellow; }
-.project-card-container { outline: 3px solid green; }
-.skills { outline: 3px solid blue; }
-
-

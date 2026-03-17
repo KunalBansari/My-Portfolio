@@ -2,7 +2,7 @@
   justify-items: center;
 }
 
-.domain-section{
+.skills-section{
   display: flex;
   column-gap: 20px;
   background-color: antiquewhite;
@@ -40,12 +40,12 @@
 the above one works too  
 */
 /* below one is multiple class select css property */
-.domain-section.top{
+.skills-section.top{
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
 }
 
-.domain-section.bottom{
+.skills-section.bottom{
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
 }

@@ -1,78 +1,78 @@
 .contact{
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  row-gap: 100px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 200px;
 }
 
-.contact-section.top{
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 150px;
-}
-
-.text-contact-top{
-  font-size: 100px;
-}
-
-.line-contact-top {
-  width: 1000px;
-  height: 2px;
-  vertical-align: middle;
-  background-color: aliceblue;
-}
-
-.contact-section.middle{
-  width: 100%;
-  max-width: 1200px;
-
-  display: flex;
-  row-gap: 50px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.lets-talk-section{
+.contact-text{
+  color: rgb(173, 175, 177);
   font-size: 40px;
-}
-
-.connect-section{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  column-gap: 80px;
-}
-
-.greeting-section{
+  display: block;
+  text-align: center;
   padding-bottom: 50px;
 }
 
-.navigate-section{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.contact-form{
+  width: 100%;
+  max-width: 700px;
 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 24px;
+  row-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  column-count: auto;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
-.navigation-icon{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+input{
+  outline: none;
+  color: rgb(173, 175, 177);
+  background-color: rgb(27 27 27);
+  font-size: 16px;
+  border-style: none;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+}
+
+input::placeholder{
+  color: rgb(158 158 158);
+  font-size: 14px;
+}
+
+.send-button{
+  justify-self: end;
+  background-color: rgb(18 17 17);
+  border: 2px solid rgb(158, 158, 158);
+  color: rgb(158 158 158);
+  border-radius: 8px;
+  width: 100px;
+  height: 40px;
   cursor: pointer;
 }
 
-.back-icon{
-  width: 25px;
+button::placeholder{
+  color: rgb(158 158 158);
 }
 
-.navigate-text{
-  font-size: 12px;
+@media(min-width: 480px){
+  .send-button{
+    grid-column: 2;
+    justify-self: end;
+  }
+}
+
+@media (max-width: 480px){
+  .contact-form{
+    width: 100%;
+    max-width: 300px;
+
+    display: grid;
+    grid-template-columns: .8fr ;
+    row-gap: 20px;
+    /* align-items: center;
+    justify-content: center; */
+  } 
 }

@@ -18,6 +18,24 @@ function normalizeDelta(raw, n) {
     return raw;
   }
 
+function placeArrows(){
+    const leftArrow = document.querySelector(".left-arrow");
+    const rightArrow = document.querySelector(".right-arrow");
+
+    const leftCard = document.querySelector(".role-left");
+    const rightCard = document.querySelector(".role-right");
+    const centerCard = document.querySelector(".role-center");
+
+   
+    if(window.innerWidth <= 480){
+        centerCard.append(leftArrow);
+        centerCard.append(rightArrow);
+    } else {
+        leftCard.append(leftArrow);
+        rightCard.append(rightArrow);
+    } 
+}
+
 function updateSliderUI() {
     const n = totalcards;
 
@@ -44,19 +62,22 @@ function updateSliderUI() {
       } else {
         card.classList.add("role-hidden");
       }
-    });
-  }
+    });        
+    placeArrows();
+}
 
-  // Button logic
-  nextBtn.addEventListener("click", () => {
-    activeindex = (activeindex - 1) % totalcards;
-    updateSliderUI();
-  });
+// Button logic
+nextBtn.addEventListener("click", () => {
+activeindex = (activeindex - 1) % totalcards;
+updateSliderUI();
+});
 
-  prevBtn.addEventListener("click", () => {
-    activeindex = (activeindex + 1 ) % totalcards;
-    updateSliderUI();
-  });
+prevBtn.addEventListener("click", () => {
+activeindex = (activeindex + 1 ) % totalcards;
+updateSliderUI();
+});
 
-  // Initial render
-  updateSliderUI();
+// Initial render
+
+updateSliderUI();
+window.addEventListener("resize", placeArrows);

@@ -28,7 +28,7 @@
           <a href = "#contact">Contact</a>
         </nav>
 
-        <div class = "right-section">git-logo</div>
+        <div class = "right-section"><img class = "github-logo" src = "icons/github-icon.svg"></div>
         <div class = "right-section-mob"><img class = "ham-logo" id = "ham-logo" src = "icons/hamburger-menu.svg"></div>
 
       </div>
@@ -43,14 +43,14 @@
       </section>
 
       <section class = "project">
-
-        <button class = "left-arrow">
-            <img class = "img-left-arrow" id = "img-left-arrow"src = "icons/left-arrow.svg">
-        </button>
-
         <div class = "viewport" id = "viewport">
-                    
+
+          <button class = "left-arrow">
+            <img class = "img-left-arrow" id = "img-left-arrow"src = "icons/left-arrow.svg">
+          </button>
+
           <div class = "project-card">
+            
             <div class = "project-card-top">
 
               <div class = "project-title">portfolio 1</div>
@@ -145,18 +145,19 @@
 
             </div>
           </div>
-                        
-        </div>
-        
-        <button class = "right-arrow">
+
+          <button class = "right-arrow">
             <img class = "img-right-arrow" id = "img-right-arrow" src = "icons/right-arrow.svg">
           </button>
+            
+        </div>
+        
         
       </section>
 
       <section class = "skills">
         
-          <div class = "domain-section top">
+          <div class = "skills-section top">
 
             <div class = "domain-skills">
               <img class = "skill-icon" src = "icons/html-icon.svg">
@@ -175,7 +176,7 @@
 
           </div>
 
-          <div class = "domain-section">
+          <div class = "skills-section">
 
             <div class = "domain-skills">
               <img class = "skill-icon" src = "icons/html-icon.svg">
@@ -193,7 +194,7 @@
             </div>          
           </div>
 
-          <div class = "domain-section bottom">
+          <div class = "skills-section bottom">
 
             <div class = "domain-skills">
               <img class = "skill-icon" src = "icons/html-icon.svg">
@@ -214,51 +215,38 @@
       </section>
 
       <section class = "contact">
-        <div class = "contact-section top">
-
-          <span class = "text-contact-top">MY</span>
-          <span class = "line-contact-top"></span>
-          <span class = "text-contact-top">SOCIAL</span>
-                    
-        </div>
-        <div class = "contact-section middle">
-
-          <div class = "lets-talk-section">Let's Connect</div>
-
-          <div class = "connect-section">
-
-            <div class = "connect-to">ln</div>
-            <div class = "connect-to">gm</div>
-            <div class = "connect-to">ig</div>
-            <div class = "connect-to">gh</div>
-
-          </div>
-        </div>
-        
-        <div class = "contact-section bottom">
-
-          <div class = "greeting-section">
-
-            <div class = "greeting-text">
-              Thanks for Scrolling
-            </div>
-          </div>
-
-          <div class = "navigate-section">
-
-            <div class = "navigation-icon">
-              <img src = "icons/back-top-icon.svg" class = "back-icon">
-            </div>
-
-            <div class = "navigate-text">
-              back to top
-            </div>
-          </div>          
-        </div>
+        <div class = "contact-text">Let's Connect</div>
+        <div class = "contact-form">
+          <input type = "text" placeholder = "Name">
+          <input type = "email" placeholder = "Email">
+          <input type = "email" placeholder = "Number">
+          <input type = "text" placeholder = "Service of interest">
+          <!-- <input type = "number" min = "0" max = "30" step = "1" placeholder = "Timeline (in weeks)"> -->
+          <input type = "text" placeholder = "Timeline (in weeks)">
+          <input type = "text" placeholder = "Project description">
+          <button class = "send-button">Send</button>
+        </div>        
       </section>
 
-      <footer class = "footer">
-        © 2026 Kunal Bansari • Built with HTML/CSS/JS
+      <footer>
+        <div class = "footer-logo">logo</div>
+        <div class = "quick-links-section">
+          <div class = "quick-links">Home</div>
+          <div class = "quick-links">Projects</div>
+          <div class = "quick-links">About me</div>
+          <div class = "quick-links">Skills</div>
+        </div>
+        <div class = "social-media-section"> 
+          <div class = "social-media-links"><img class = "social-media-icons" src = "icons/linkedin-icon.svg"></div>
+          <div class = "social-media-links"><img class = "social-media-icons" src = "icons/instagram-icon.svg"></div>
+          <div class = "social-media-links"><img class = "social-media-icons" src = "icons/gmail-icon.svg"></div>
+          <div class = "social-media-links"><img class = "social-media-icons" src = "icons/github-icon.svg"></div>
+        </div>
+        <div class = "contact-section"> 
+          <div class="phone-icon-section"> <img class = "phone-icon" src = "icons/phone-icon.svg"></div>
+          <div> +91 6367805486</div>
+        </div>
+        <div class = "footer">© 2026 Kunal Bansari • Built with HTML/CSS/JS</div>
       </footer>
 
     </main>

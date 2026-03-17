@@ -29,11 +29,16 @@
 }
 
 .left-section{
-  justify-content: flex-start;
+  justify-self: left;
 }
 
 .right-section{
-  justify-content: flex-end;
+  justify-content: right;
+}
+
+.github-logo{
+  width: 32px;
+  cursor: pointer;
 }
 
 .right-section-mob{

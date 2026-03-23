@@ -13,7 +13,7 @@
 }
 
 .contact-form{
-  width: 100%;
+  width: 80%;
   max-width: 700px;
 
   display: grid;
@@ -29,6 +29,9 @@
 
 input{
   outline: none;
+  width: 100%;
+
+
   color: rgb(173, 175, 177);
   background-color: rgb(27 27 27);
   font-size: 16px;
@@ -42,7 +45,7 @@ input::placeholder{
   font-size: 14px;
 }
 
-.send-button{
+.contact-send-button{
   justify-self: end;
   background-color: rgb(18 17 17);
   border: 2px solid rgb(158, 158, 158);
@@ -57,22 +60,31 @@ button::placeholder{
   color: rgb(158 158 158);
 }
 
-@media(min-width: 480px){
-  .send-button{
+
+@media(min-width: 630px){
+  .contact-send-button{
     grid-column: 2;
     justify-self: end;
-  }
+  } 
 }
 
-@media (max-width: 480px){
+@media (max-width: 630px){
   .contact-form{
-    width: 100%;
+    width: 80%;
     max-width: 300px;
 
     display: grid;
-    grid-template-columns: .8fr ;
+    grid-template-columns: 1fr ;
     row-gap: 20px;
-    /* align-items: center;
-    justify-content: center; */
+    align-items: center;
+    justify-self: center;
   } 
+  
+  .contact-send-button{
+    width: clamp(70px, 40vw, 100px);
+  }
+
+  .contact-text{
+    font-size: clamp(28px, 10vw, 36px);
+  }
 }

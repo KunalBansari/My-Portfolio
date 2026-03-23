@@ -8,8 +8,8 @@ ham.addEventListener('click', () =>{
 let activeindex = 0;
 const cards = document.querySelectorAll('.project-card');
 const totalcards = cards.length;
-const prevBtn = document.getElementById("img-left-arrow");
-const nextBtn = document.getElementById("img-right-arrow");
+const prevBtn = document.getElementById("left-arrow");
+const nextBtn = document.getElementById("right-arrow");
 // const cards = document.querySelectorAll("project-card")
 
 function normalizeDelta(raw, n) {
@@ -27,7 +27,7 @@ function placeArrows(){
     const centerCard = document.querySelector(".role-center");
 
    
-    if(window.innerWidth <= 480){
+    if(window.innerWidth <= 630){
         centerCard.append(leftArrow);
         centerCard.append(rightArrow);
     } else {

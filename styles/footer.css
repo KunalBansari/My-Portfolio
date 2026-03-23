@@ -10,7 +10,7 @@ footer{
   align-items: center;
 }
 
-.quick-links-section, .social-media-section{
+.footer-quick-links-section, .footer-social-media-section{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +18,7 @@ footer{
   color: rgb(147 147 147);
 }
 
-.social-media-links{
+.footer-social-media-links{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,12 +28,12 @@ footer{
   border-radius: 100px;
   cursor: pointer;
 }
-.social-media-icons{
+.footer-social-media-icons{
   width: 32px;
   height: 31px;
 }
 
-.contact-section{
+.footer-greeting-section{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,11 +42,11 @@ footer{
 
 }
 
-.phone-icon-section{
+.footer-contact-icon-section{
   padding-top: 10px;
 }
 
-.phone-icon{
+.footer-contact-icon{
   width: 30px;
 }
 

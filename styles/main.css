@@ -4,7 +4,7 @@ html, body{
   padding: 0;
   margin: 0;
 
-  background-color: rgb(245, 245, 246);
+  /* background-color: rgb(245, 245, 246); */
   background-color: rgb(17 17 17);
   
   font-family:  poppins;
@@ -16,5 +16,294 @@ html, body{
 }
 
 main{
-  padding-top: 120px;
+  padding-top: 150px;
+}
+
+.hero{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  
+  width: 100%;
+  padding: 0 6vw ;
+  /* margin: 0 auto 40px 40px; */
+
+  margin-bottom: 40px;
+}
+
+.hero-inner-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 25px;
+}
+
+.hero-intro-greeting{
+  color: rgb(108 108 108);
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.hero-intro-name{
+  color: rgb(150, 150, 150);
+  font-size: 26px;
+}
+
+.hero-intro-designation{
+  color: rgb(0, 120, 230);
+  font-size: clamp(30px, 5vw, 40px);
+}
+
+.hero-social-contact-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  row-gap: 40px;
+}
+
+.hero-social-media-section{
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.hero-social-media-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border: 2px solid rgb(64 64 64);
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+
+.hero-social-media-icons{
+  width: 32px;
+  height: 31px;
+}
+
+.hero-contact-section{
+  display: flex;
+  column-gap: 35px;
+}
+
+.hero-hire-me-button, .hero-cv-button{
+  background-color: rgb(17 17 17);
+  border: 2px solid rgb(158, 158, 158);
+  color: rgb(147 147 147);
+  border-radius: 8px;
+  width: 150px;
+  height: 48px;
+  cursor: pointer;
+
+  font-size: 18px;
+  padding-top: 5px;
+}
+
+.hero-hire-me-button{
+  background-color: rgb(0, 120, 230);
+  color: rgb(253 233 219);
+  border: none;
+}
+
+.hero-cv-button{
+  width: 110px;
+}
+
+.hero-stats-section{
+  display: flex;
+  max-width: 310px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+
+  background-color: rgb(27 27 27);
+  color: rgb(147 147 147);
+  border-radius: 10px;
+  padding: 20px 0px;
+}
+
+.hero-stats-experience, .hero-stats-project{
+  text-align: center; 
+  padding: 5px 20px;  
+}
+
+.hero-stats-experience{ border-right: 2px solid rgb(71 69 68);}
+
+.hero-stats-numbers{ 
+  text-align: left;
+  color: rgb(0, 120, 230);
+}
+
+.hero-display-picture-section{
+  width: 45%;
+  max-width: 350px;
+  display: flex;
+  justify-content: right;
+}
+
+.hero-display-picture{
+  width: 60%;
+  /* max-width: 210px; */
+  min-width: 190px;
+
+  border-radius: 20px;
+  /* object-position: center; */
+}
+
+@media(max-width: 655px){
+  .hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 40px;
+  
+  width: 100%;
+  padding: 0 5px;
+  margin: auto;
+  
+  margin-bottom: 40px;
+  }
+
+  .hero-inner-section{
+    order: 1;
+    row-gap: 10px;
+  }
+
+  .hero-display-picture-section{
+    order: 0;
+    width: 45%;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-display-picture{
+    width: 70%;
+    min-width: 120px;
+
+    border-radius: 20px;
+  }
+}
+
+@media(max-width: 400px){
+  .hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 40px;
+  
+  width: 100%;
+  padding: 0 5px;
+  margin: auto;
+  
+  margin-bottom: 40px;
+  }
+
+  .hero-inner-section{
+    order: 1;
+    row-gap: 10px;
+  }
+
+  .hero-intro-greeting{
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+  
+  .hero-intro-name{
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  .hero-intro-designation{
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .hero-social-contact-section{
+    row-gap: 20px;
+  }   
+
+  .hero-social-media-section{
+    column-gap: 8px;
+    justify-content: center;
+  }
+
+  .hero-social-media-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border: 2px solid rgb(64 64 64);
+    border-radius: 100px;
+    cursor: pointer;
+  }
+
+  .hero-social-media-icons{
+    width: 25px;
+    height: 25px;
+  }
+
+  .hero-contact-section{
+    flex-direction: column;
+    row-gap: 20px;
+    column-gap: 0;
+    align-items: center;
+  }
+
+  .hero-display-picture-section{
+    order: 0;
+    width: 45%;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-display-picture{
+    width: 60%;
+    min-width: 120px;
+
+    border-radius: 20px;
+  }
+}
+
+@media(max-width: 350px){
+  .hero-social-contact-section{
+    align-items: center;
+  }
+
+  .hero-hire-me-button{
+    width: 130px;
+  }
+  .hero-stats-section{
+    flex-direction: column;
+    align-items: center;
+    max-width: 170px;
+    width: 87%;
+    font-size: 16px;
+    padding: 0 clamp(10px, 6vw, 20px);
+    border-radius: 15px;
+  }
+
+  .hero-stats-experience, .hero-stats-project{
+    /* text-align: center;  */
+    padding: clamp(10px, 6vw, 15px) 0;  
+  }
+
+  .hero-stats-experience{ 
+    border: none;
+    border-bottom: 2px solid rgb(71 69 68);
+  }
+
+  .hero-stats-numbers{ 
+    text-align: center;
+    color: rgb(0, 120, 230);
+  }
 }

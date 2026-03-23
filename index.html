@@ -11,7 +11,6 @@
     <link rel = "stylesheet" href = "styles/skills.css">
     <link rel = "stylesheet" href = "styles/contact.css">
     <link rel = "stylesheet" href = "styles/footer.css">
-    
   </head>
 
   <body>
@@ -19,16 +18,17 @@
     <header class = "header">
 
       <div class = "header-inner">
-        
-        <div class="left-section">LOGO</div>
+        <div class="left-section">Kunal Bansari</div>
+        <!-- <div class="left-section">LOGO</div> -->
       
         <nav class = "middle-section" id = "middle-section">
           <a href = "#projects">Projects</a>
+          <a href = "#About">About me</a>
           <a href = "#skills">Skills</a>
           <a href = "#contact">Contact</a>
         </nav>
 
-        <div class = "right-section"><img class = "github-logo" src = "icons/github-icon.svg"></div>
+        
         <div class = "right-section-mob"><img class = "ham-logo" id = "ham-logo" src = "icons/hamburger-menu.svg"></div>
 
       </div>
@@ -37,117 +37,171 @@
     <main>
 
       <section class = "hero">
-        <div class = "name">I'm Kunal</div>
-        <div class = "designation">aspiring</div>
-        <div class = "intro-line"> blah blah blah</div>
+        <div class = "hero-inner-section">
+          <div class = "hero-intro-section">
+            <div class = "hero-intro-greeting">Hi I am</div>
+            <div class = "hero-intro-name">Kunal Bansari</div>
+            <div class = "hero-intro-designation">A Software Engineer</div>
+          </div>
+
+          <div class = "hero-social-contact-section">
+            <div class = "hero-social-media-section">
+              <div class = "hero-social-media-links"><img class = "hero-social-media-icons" src = "icons/linkedin-icon.svg"></div>
+              <div class = "hero-social-media-links"><img class = "hero-social-media-icons" src = "icons/instagram-icon.svg"></div>
+              <div class = "hero-social-media-links"><img class = "hero-social-media-icons" src = "icons/gmail-icon.svg"></div>
+              <div class = "hero-social-media-links"><img class = "hero-social-media-icons" src = "icons/github-icon.svg"></div>
+            </div>
+
+            <div class = "hero-contact-section">
+              <button class = "hero-hire-me-button">Work with me</button>
+              <button class = "hero-cv-button">My CV</button>
+            </div>
+
+            <div class = "hero-stats-section">
+              <div class = "hero-stats-experience">
+                  <div class = "hero-stats-numbers">0</div>
+                  <div>Experience</div>
+                </div>
+              <div class = "hero-stats-project">
+                <div class = "hero-stats-numbers">0</div>
+                <div>Projects done</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class = "hero-display-picture-section">
+          <img class = "hero-display-picture" src = "icons/profile-picture.jpg">
+        </div>
       </section>
 
       <section class = "project">
         <div class = "viewport" id = "viewport">
 
-          <button class = "left-arrow">
-            <img class = "img-left-arrow" id = "img-left-arrow"src = "icons/left-arrow.svg">
+          <button class = "left-arrow" id = "left-arrow">
+            <img class = "left-arrow-icon" src = "icons/left-arrow.svg">
           </button>
 
           <div class = "project-card">
             
-            <div class = "project-card-top">
-
-              <div class = "project-title">portfolio 1</div>
-              <div class = "project-desc">my own</div>
-
-            </div>
-
-            <div class = "project-card-bottom">
-
-              <div class = "tech-stack">
-                <span class = "skill-used">HTML</span>
-                <span class = "skill-used">CSS</span>
-                <span class = "skill-used">JavaScript</span>
+              <div class = "project-picture-section">
+                <img class = "project-picture" src = "icons/project-picture.jpg">
+              </div>
+                         
+            <div class = "project-tech-desc-section">
+              
+              <div class = "project-name">Personal Portfolio Website</div>
+              <div class = "project-skill-set-section">
+                <span class = "project-skill-set">Tech Stack: </span>
+                <span class = "project-skill-used">HTML</span>
+                <span class = "project-skill-used">CSS</span>
+                <span class = "project-skill-used">JavaScript</span>
               </div>
 
-              <div class = "action">
-                <button class = "to-project">github</button>
-                <button class = "to-project">live</button>
-              </div>
+              <!-- <div class = "project-live-section">
+                <button class = "project-github-button">github</button>
+                <button class = "project-live-button">live</button>
+              </div> -->
 
             </div>
           </div>
-                        
           <div class = "project-card">
-            <div class = "project-card-top">
-
-              <div class = "project-title">portfolio 2</div>
-              <div class = "project-desc">my own</div>
-
-            </div>
-
-            <div class = "project-card-bottom">
-
-              <div class = "tech-stack">
-                <span class = "skill-used">HTML</span>
-                <span class = "skill-used">CSS</span>
-                <span class = "skill-used">JavaScript</span>
+            
+              <div class = "project-picture-section">
+                <img class = "project-picture" src = "icons/project-picture.jpg">
+              </div>
+                         
+            <div class = "project-tech-desc-section">
+              
+              <div class = "project-name">Personal Project 1</div>
+              <div class = "project-skill-set-section">
+                <span class = "project-skill-set">Tech Stack: </span>
+                <span class = "project-skill-used">HTML</span>
+                <span class = "project-skill-used">CSS</span>
+                <span class = "project-skill-used">JavaScript</span>
               </div>
 
-              <div class = "action">
-                <button class = "to-project">github</button>
-                <button class = "to-project">live</button>
-              </div>
+              <!-- <div class = "project-live-section">
+                <button class = "project-github-button">github</button>
+                <button class = "project-live-button">live</button>
+              </div> -->
 
             </div>
           </div>
-                        
           <div class = "project-card">
-            <div class = "project-card-top">
+            
+              <div class = "project-picture-section">
+                <img class = "project-picture" src = "icons/project-picture.jpg">
+              </div>
+                         
+            <div class = "project-tech-desc-section">
+              
+              <div class = "project-name">Personal Portfolio Website</div>
+              <div class = "project-skill-set-section">
+                <span class = "project-skill-set">Tech Stack: </span>
+                <span class = "project-skill-used">HTML</span>
+                <span class = "project-skill-used">CSS</span>
+                <span class = "project-skill-used">JavaScript</span>
+              </div>
 
-              <div class = "project-title">portfolio 3</div>
-              <div class = "project-desc">my own</div>
+              <!-- <div class = "project-live-section">
+                <button class = "project-github-button">github</button>
+                <button class = "project-live-button">live</button>
+              </div> -->
 
             </div>
-
-            <div class = "project-card-bottom">
-
-              <div class = "tech-stack">
-                <span class = "skill-used">HTML</span>
-                <span class = "skill-used">CSS</span>
-                <span class = "skill-used">JavaScript</span>
+          </div>
+          <div class = "project-card">
+            
+              <div class = "project-picture-section">
+                <img class = "project-picture" src = "icons/project-picture.jpg">
+              </div>
+                         
+            <div class = "project-tech-desc-section">
+              
+              <div class = "project-name">Personal project 2</div>
+              <div class = "project-skill-set-section">
+                <span class = "project-skill-set">Tech Stack: </span>
+                <span class = "project-skill-used">HTML</span>
+                <span class = "project-skill-used">CSS</span>
+                <span class = "project-skill-used">JavaScript</span>
               </div>
 
-              <div class = "action">
-                <button class = "to-project">github</button>
-                <button class = "to-project">live</button>
+              <!-- <div class = "project-live-section">
+                <button class = "project-github-button">github</button>
+                <button class = "project-live-button">live</button>
+              </div> -->
+
+            </div>
+          </div>
+          <div class = "project-card">
+            
+              <div class = "project-picture-section">
+                <img class = "project-picture" src = "icons/project-picture.jpg">
               </div>
+                         
+            <div class = "project-tech-desc-section">
+              
+              <div class = "project-name">Personal project 3</div>
+              <div class = "project-skill-set-section">
+                <span class = "project-skill-set">Tech Stack: </span>
+                <span class = "project-skill-used">HTML</span>
+                <span class = "project-skill-used">CSS</span>
+                <span class = "project-skill-used">JavaScript</span>
+              </div>
+
+              <!-- <div class = "project-live-section">
+                <button class = "project-github-button">github</button>
+                <button class = "project-live-button">live</button>
+              </div> -->
 
             </div>
           </div>
                         
-          <div class = "project-card" >
-            <div class = "project-card-top">
+          
 
-              <div class = "project-title">portfolio 4</div>
-              <div class = "project-desc">my own</div>
-
-            </div>
-
-            <div class = "project-card-bottom">
-
-              <div class = "tech-stack">
-                <span class = "skill-used">HTML</span>
-                <span class = "skill-used">CSS</span>
-                <span class = "skill-used">JavaScript</span>
-              </div>
-
-              <div class = "action">
-                <button class = "to-project">github</button>
-                <button class = "to-project">live</button>
-              </div>
-
-            </div>
-          </div>
-
-          <button class = "right-arrow">
-            <img class = "img-right-arrow" id = "img-right-arrow" src = "icons/right-arrow.svg">
+          <button class = "right-arrow" id = "right-arrow">
+            <img class = "right-arrow-icon" src = "icons/right-arrow.svg">
           </button>
             
         </div>
@@ -155,64 +209,64 @@
         
       </section>
 
-      <section class = "skills">
+      <!-- <section class = "skills">
         
           <div class = "skills-section top">
 
-            <div class = "domain-skills">
-              <img class = "skill-icon" src = "icons/html-icon.svg">
-              <span class = "skill-name">html</span>
+            <div class = "skills-tech-section">
+              <img class = "skills-tech-icon" src = "icons/html-icon.svg">
+              <span class = "skills-tech-name">html</span>
             </div>
 
-            <div class = "domain-skills">
-              <img class = "skill-icon" src = "icons/css-icon.svg">
-              <span class = "skill-name">CSS</span>
+            <div class = "skills-tech-section">
+              <img class = "skills-tech-icon" src = "icons/css-icon.svg">
+              <span class = "skills-tech-name">CSS</span>
             </div>
 
-            <div class = "domain-skills">
-              <img class = "skill-icon" src = "icons/javascript-icon.svg">
-              <span class = "skill-name">JavaScript</span>
+            <div class = "skills-tech-section">
+              <img class = "skills-tech-icon" src = "icons/javascript-icon.svg">
+              <span class = "skills-tech-name">JavaScript</span>
             </div>
 
           </div>
 
           <div class = "skills-section">
 
-            <div class = "domain-skills">
-              <img class = "skill-icon" src = "icons/html-icon.svg">
-              <span class = "skill-name">html</span>
+            <div class = "skills-tech-section">
+              <img class = "skills-tech-icon" src = "icons/html-icon.svg">
+              <span class = "skills-tech-name">html</span>
             </div>
 
-            <div class = "domain-skills">
-              <img class = "skill-icon" src = "icons/css-icon.svg">
-              <span class = "skill-name">CSS</span>
+            <div class = "skills-tech-section">
+              <img class = "skills-tech-icon" src = "icons/css-icon.svg">
+              <span class = "skills-tech-name">CSS</span>
             </div>
 
-            <div class = "domain-skills">
-              <img class = "skill-icon" src = "icons/javascript-icon.svg">
-              <span class = "skill-name">JavaScript</span>
+            <div class = "skills-tech-section">
+              <img class = "skills-tech-icon" src = "icons/javascript-icon.svg">
+              <span class = "skills-tech-name">JavaScript</span>
             </div>          
           </div>
 
           <div class = "skills-section bottom">
 
-            <div class = "domain-skills">
-              <img class = "skill-icon" src = "icons/html-icon.svg">
-              <span class = "skill-name">html</span>
+            <div class = "skills-tech-section">
+              <img class = "skills-tech-icon" src = "icons/html-icon.svg">
+              <span class = "skills-tech-name">html</span>
             </div>
 
-            <div class = "domain-skills">
-              <img class = "skill-icon" src = "icons/css-icon.svg">
-              <span class = "skill-name">CSS</span>
+            <div class = "skills-tech-section">
+              <img class = "skills-tech-icon" src = "icons/css-icon.svg">
+              <span class = "skills-tech-name">CSS</span>
             </div>
 
-            <div class = "domain-skills">
-              <img class = "skill-icon" src = "icons/javascript-icon.svg">
-              <span class = "skill-name">JavaScript</span>
+            <div class = "skills-tech-section">
+              <img class = "skills-tech-icon" src = "icons/javascript-icon.svg">
+              <span class = "skills-tech-name">JavaScript</span>
             </div>
 
         </div>
-      </section>
+      </section> -->
 
       <section class = "contact">
         <div class = "contact-text">Let's Connect</div>
@@ -221,30 +275,29 @@
           <input type = "email" placeholder = "Email">
           <input type = "email" placeholder = "Number">
           <input type = "text" placeholder = "Service of interest">
-          <!-- <input type = "number" min = "0" max = "30" step = "1" placeholder = "Timeline (in weeks)"> -->
+          
           <input type = "text" placeholder = "Timeline (in weeks)">
           <input type = "text" placeholder = "Project description">
-          <button class = "send-button">Send</button>
+          <button class = "contact-send-button">Send</button>
         </div>        
       </section>
 
       <footer>
         <div class = "footer-logo">logo</div>
-        <div class = "quick-links-section">
-          <div class = "quick-links">Home</div>
-          <div class = "quick-links">Projects</div>
-          <div class = "quick-links">About me</div>
-          <div class = "quick-links">Skills</div>
+        <div class = "footer-quick-links-section">
+          <div class = "footer-quick-links">Home</div>
+          <div class = "footer-quick-links">Projects</div>
+          <div class = "footer-quick-links">About me</div>
+          <div class = "footer-quick-links">Skills</div>
         </div>
-        <div class = "social-media-section"> 
-          <div class = "social-media-links"><img class = "social-media-icons" src = "icons/linkedin-icon.svg"></div>
-          <div class = "social-media-links"><img class = "social-media-icons" src = "icons/instagram-icon.svg"></div>
-          <div class = "social-media-links"><img class = "social-media-icons" src = "icons/gmail-icon.svg"></div>
-          <div class = "social-media-links"><img class = "social-media-icons" src = "icons/github-icon.svg"></div>
+        <div class = "footer-social-media-section"> 
+          <div class = "footer-social-media-links"><img class = "footer-social-media-icons" src = "icons/linkedin-icon.svg"></div>
+          <div class = "footer-social-media-links"><img class = "footer-social-media-icons" src = "icons/instagram-icon.svg"></div>
+          <div class = "footer-social-media-links"><img class = "footer-social-media-icons" src = "icons/gmail-icon.svg"></div>
+          <div class = "footer-social-media-links"><img class = "footer-social-media-icons" src = "icons/github-icon.svg"></div>
         </div>
-        <div class = "contact-section"> 
-          <div class="phone-icon-section"> <img class = "phone-icon" src = "icons/phone-icon.svg"></div>
-          <div> +91 6367805486</div>
+        <div class = "footer-greeting-section"> 
+          Thanks for Scrolling
         </div>
         <div class = "footer">© 2026 Kunal Bansari • Built with HTML/CSS/JS</div>
       </footer>

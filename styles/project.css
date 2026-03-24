@@ -71,6 +71,7 @@
   
   border-radius: clamp(8px, 4vw, 15px);
   padding: clamp(5px, 2vw, 10px);
+  transition: 0.3s;
 } 
 
 .project-picture-section{

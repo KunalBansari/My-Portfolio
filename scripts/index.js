@@ -26,7 +26,7 @@ function placeArrows(){
     const rightCard = document.querySelector(".role-right");
     const centerCard = document.querySelector(".role-center");
 
-   
+  
     if(window.innerWidth <= 630){
         centerCard.append(leftArrow);
         centerCard.append(rightArrow);

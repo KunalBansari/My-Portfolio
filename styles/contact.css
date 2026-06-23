@@ -41,15 +41,15 @@ input{
 }
 
 input::placeholder{
-  color: rgb(158 158 158);
+  color: rgb(150 150 150);
   font-size: 14px;
 }
 
 .contact-send-button{
   justify-self: end;
   background-color: rgb(18 17 17);
-  border: 2px solid rgb(158, 158, 158);
-  color: rgb(158 158 158);
+  border: 2px solid rgb(150, 150, 150);
+  color: rgb(150 150 150);
   border-radius: 8px;
   width: 100px;
   height: 40px;
@@ -57,7 +57,7 @@ input::placeholder{
 }
 
 button::placeholder{
-  color: rgb(158 158 158);
+  color: rgb(150 150 150);
 }
 
 

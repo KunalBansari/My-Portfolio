@@ -2,8 +2,13 @@
   position: relative;
   width: 100%;
   max-width: 800px;
-  height: 90vh;
+  height: 100vh;
   margin: auto;
+
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  min-height: 100vh; 
 }
 
 .left-arrow, .right-arrow{

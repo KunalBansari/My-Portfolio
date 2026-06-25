@@ -1,11 +1,23 @@
+.skills{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    margin : auto;
+   
+}
+
 .skills-card{
   /* background-color: rgba(0, 119, 230, 0.537); */
   display: flex;
   column-gap: 40px;
+  width: 100%;
   
   justify-content: center;
   align-items: flex-start;
   color: rgb(198, 198, 198);
+
   
   /* padding: 20px 20px; */
 }

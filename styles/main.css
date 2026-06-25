@@ -12,6 +12,22 @@ html, body{
   scroll-behavior: smooth;
 }
 
+body::before {
+  content: "hey there";
+  position: fixed;
+  inset: 0;
+  z-index: -999;
+  opacity: 0.2;
+
+  background:
+    radial-gradient(circle at 10% 20%, #3b82f6 0, transparent 10%),
+    radial-gradient(circle at 30% 50%, #3b82f6 0, transparent 10%),
+    radial-gradient(circle at 50% 10%, #3b82f6 0, transparent 10%),
+    radial-gradient(circle at 70% 80%, #3b82f6 0, transparent 10%),
+    radial-gradient(circle at 90% 30%, #3b82f6 0, transparent 10%),
+    radial-gradient(circle at 10% 90%, #3b82f6 0, transparent 10%);
+}
+
 *{
   box-sizing: border-box;
 }
@@ -23,6 +39,7 @@ html, body{
   height: 100vh;
   /* background-color: black; */
 }
+
 
 .hero-inner-section{
   display: flex;

@@ -81,3 +81,62 @@ updateSliderUI();
 
 updateSliderUI();
 window.addEventListener("resize", placeArrows);
+
+dragDrop();
+
+const newcircle = document.querySelector('.circle');
+
+console.log(newcircle.getBoundingClientRect());
+
+const newcirclediv = document.querySelector('.circle-div')
+console.log(newcirclediv.getBoundingClientRect());
+
+function dragDrop(){
+  let isDragging = 0;
+  let startX = 0;
+  let diffX = 0;
+
+  
+  
+  const circle = document.querySelector('.circle');
+  
+  circle.addEventListener('mousedown', (event) => {
+    isDragging = 1;
+    startX = event.clientX;
+    circle.style.transition = 'none';
+    
+  });
+  
+  window.addEventListener('mousemove', (event) =>{
+    
+    if(isDragging){
+      // currentPositionX = (event.clientX)-startX;
+      // console.log(currentPositionX);
+      // const diffX = event.clientX - currentPositionX;
+      // console.log(diffX);
+      diffX = event.clientX-startX;
+      // const  newPositionX = 0;
+      // circle.style.transition = 'transform 0.s ease';
+      circle.style.transform = `translateX(${diffX}px)`;
+      
+    }
+
+    if(diffX > 300 || diffX < 0){
+      isDragging = 0;
+      diffX = 0;
+    }
+
+  });
+  
+  window.addEventListener('mouseup', (event) =>{
+    isDragging = 0;
+    diffX = 0;
+
+    circle.style.transition = 'transform 0.9s ease';
+    circle.style.transform = 'translateX(0px)';
+
+
+  });
+
+}
+

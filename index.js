@@ -105,7 +105,7 @@ function dragDrop(){
     
   });
   
-  window.addEventListener('mousemove', (event) =>{
+  circle.addEventListener('mousemove', (event) =>{
     
     if(isDragging){
       diffX = event.clientX-startX;
@@ -120,7 +120,10 @@ function dragDrop(){
       hideArrow.classList.remove("hidden");
       
     }
-    
+    if(diffX>= 150){
+      showContact.classList.remove("hidden");
+      fadeMain.classList.add("fades-out");
+    }
   });
   
   window.addEventListener('mouseup', (event) =>{
@@ -131,8 +134,7 @@ function dragDrop(){
     circle.style.transition = 'transform 0.9s ease';
     circle.style.transform = 'translateX(0px)';
     hideArrow.classList.remove("hidden");
-    showContact.classList.remove("hidden");
-    fadeMain.classList.add("fades-out");
+    // fadeMain.classList.add("fades-out");
 
     
     const hideContact = document.querySelector(".close-btn");

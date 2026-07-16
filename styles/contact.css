@@ -6,6 +6,10 @@
 
 }
 
+.show{
+  display: none;
+}
+
 .contact-text{
   color: rgb(173, 175, 177);
   font-size: 40px;

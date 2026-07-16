@@ -82,61 +82,67 @@ updateSliderUI();
 updateSliderUI();
 window.addEventListener("resize", placeArrows);
 
+
 dragDrop();
 
-const newcircle = document.querySelector('.circle');
-
-console.log(newcircle.getBoundingClientRect());
-
-const newcirclediv = document.querySelector('.circle-div')
-console.log(newcirclediv.getBoundingClientRect());
 
 function dragDrop(){
   let isDragging = 0;
   let startX = 0;
   let diffX = 0;
-
-  
+  let endX = 0;
   
   const circle = document.querySelector('.circle');
+  const hideArrow = document.querySelector('.circle-div-icon');
+  const showContact = document.querySelector('.lets-talk-container');
+  const fadeMain = document.querySelector('.main');
   
   circle.addEventListener('mousedown', (event) => {
     isDragging = 1;
     startX = event.clientX;
     circle.style.transition = 'none';
+    hideArrow.classList.add("hidden");
     
   });
   
   window.addEventListener('mousemove', (event) =>{
     
     if(isDragging){
-      // currentPositionX = (event.clientX)-startX;
-      // console.log(currentPositionX);
-      // const diffX = event.clientX - currentPositionX;
-      // console.log(diffX);
       diffX = event.clientX-startX;
-      // const  newPositionX = 0;
-      // circle.style.transition = 'transform 0.s ease';
+      endX = event.clientX;
       circle.style.transform = `translateX(${diffX}px)`;
       
     }
-
+    
     if(diffX > 300 || diffX < 0){
       isDragging = 0;
       diffX = 0;
+      hideArrow.classList.remove("hidden");
+      
     }
-
+    
   });
   
   window.addEventListener('mouseup', (event) =>{
+
     isDragging = 0;
     diffX = 0;
-
+    
     circle.style.transition = 'transform 0.9s ease';
     circle.style.transform = 'translateX(0px)';
+    hideArrow.classList.remove("hidden");
+    showContact.classList.remove("hidden");
+    fadeMain.classList.add("fades-out");
 
+    
+    const hideContact = document.querySelector(".close-btn");
+    hideContact.addEventListener("click", () => {
+      showContact.classList.add("hidden");
+      fadeMain.classList.remove("fades-out");
 
-  });
+    });
+
+  });  
 
 }
 

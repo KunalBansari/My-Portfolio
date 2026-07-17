@@ -21,11 +21,15 @@ main{
   position: relative;
 }
 
-.hero{
+section{
   min-height: 100%;
+}
+
+.hero{
   display: flex;
   justify-content: center;
   align-items: center;
+  user-select: none;
   
 }
 
@@ -103,6 +107,7 @@ main{
   font-size: 20px;
   width: 100%;
   height: 54px;
+  cursor: pointer;
 }
 
 .circle-div{
@@ -119,7 +124,7 @@ main{
 .circle-div-text{
   position: absolute;
   padding: 0;
-  transform: translate(600px, 310px);
+  transform: translate(500px, 310px);
   font-size: 18px;
   user-select: none;
 }
@@ -127,7 +132,7 @@ main{
 .two{
   /* padding-left: 50px; */
   width:200px;
-  transform: translate(530px, 350px);
+  transform: translate(430px, 350px);
   text-align: right;
   font-size: 16px;
 }
@@ -156,8 +161,6 @@ main{
 }
 
 
-
-
 .lets-talk-container {
     position: fixed;
     width: 100%;
@@ -166,6 +169,7 @@ main{
     align-items: center;
     padding: 40px;
     z-index: 999;
+    user-select: none;
   }
   
   .contact-card {

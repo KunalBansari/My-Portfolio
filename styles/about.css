@@ -1,0 +1,84 @@
+.about{
+  min-height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about-container{
+  max-width:80%;
+  /* margin:auto; */
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  gap:80px;
+}
+
+.about-image{
+  flex:0.8;
+  display:flex;
+  justify-content: left;
+  align-items:center;
+}
+
+.about-image img{
+  width:100%;
+  max-width:500px;
+
+}
+
+.about-content{
+  flex:1;
+  max-width: 80%;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+
+.section-title{
+  font-size:18px;
+  font-weight: 600;
+  font-family: 'quicksand', sans-serif;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  /* margin-bottom:18px; */
+  line-height: 3;
+}
+
+.section-title span{
+  color:rgb(230, 111, 192);
+  font-size: larger;
+  font-weight: bold;
+}
+
+.impact-line{
+  font-size: 36px;
+  font-weight:600;
+  background: linear-gradient(to top left,rgb(230, 111, 192), rgb(113, 117, 235));
+  color: transparent;
+  background-clip: text;
+  line-height:1.2;
+  margin-top: 0;
+  
+}
+
+.about-description{
+  color:rgb(199, 204, 235);
+  font-size: 16px;
+  line-height:1.8;
+  margin: 0;
+}
+
+.signature{
+  background: linear-gradient(to top left,rgb(230, 111, 192), rgb(113, 117, 235));
+  color: transparent;
+  background-clip: text;
+  font-size: 32px;
+  font-family: "cedarville cursive";
+  font-weight:400;
+  margin-bottom:35px;
+}
+
+.download-btn-div{
+  max-width: 30%;
+}

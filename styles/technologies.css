@@ -1,0 +1,63 @@
+.technologies{
+  min-height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  position: relative;
+}
+
+canvas{
+  width: 100%;
+}
+
+.technologies-title{
+  position: absolute;
+  font-size: 28px;
+  top: 0;
+  left: 5%;
+}
+
+.technologies-used{
+  position: absolute;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.technologies-used img{
+  width: 50px;
+}
+
+.html{
+  left: 8%;
+  top: 50%;
+}
+
+.css{
+  left: 20%;
+  top: 25%;
+}
+
+.javascript{
+  left: 48%;
+  top: 35%;
+}
+
+.react{
+  left: 60%;
+  bottom: 30%;
+}
+
+.express{
+  left: 70%;
+  top: 40%;
+}
+
+.nodejs{
+  left: 78%;
+  top: 20%;
+}
+
+
+

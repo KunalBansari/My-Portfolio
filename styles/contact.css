@@ -1,71 +1,48 @@
 .contact{
-  /* margin: auto; */
-  margin-top: 100px;
-  margin-bottom: 200px;
-  height: 30vh;
-
-}
-
-.show{
-  display: none;
-}
-
-.contact-text{
-  color: rgb(173, 175, 177);
-  font-size: 40px;
-  display: block;
-  text-align: center;
-  padding-bottom: 50px;
-}
-
-.contact-form{
-  width: 80%;
-  max-width: 700px;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 24px;
-  row-gap: 20px;
+  min-height: 50%;
+  margin: 0 10px 0 10px;
+  display: flex;
+  justify-content: right;
   align-items: center;
+}
+
+.contact-feature{
+  color: white;
+  font-size: 38px;
+  font-weight: 600;
+  flex: 0.4;
+  text-transform: uppercase;
+  text-align: center;
+  text-align: left;
+}
+
+.contact-links-section{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  column-count: auto;
-  margin: auto;
-  margin-bottom: 20px;
+  align-items: center;
+  row-gap: 20px;
+  font-size: 24px;
 }
 
-input{
-  outline: none;
-  width: 100%;
-
-
-  color: rgb(173, 175, 177);
-  background-color: rgb(27 27 27);
-  font-size: 16px;
-  border-style: none;
-  border-radius: 5px;
-  padding: 10px 15px 10px 15px;
+.contact-digital{
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
 }
 
-input::placeholder{
-  color: rgb(150 150 150);
-  font-size: 14px;
+.contact-deco{
+  flex: 0.5;
+  bottom: 20%;
+  left: 72%;
+  display: flex;
+  justify-content: right;
 }
 
-.contact-send-button{
-  justify-self: end;
-  background-color: rgb(18 17 17);
-  border: 2px solid rgb(150, 150, 150);
-  color: rgb(150 150 150);
-  border-radius: 8px;
-  width: 100px;
-  height: 40px;
-  cursor: pointer;
+.contact-deco img{
+  width: 230px;
 }
-
-button::placeholder{
-  color: rgb(150 150 150);
-}
-
 
 @media(min-width: 630px){
   .contact-send-button{

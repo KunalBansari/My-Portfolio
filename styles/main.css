@@ -25,6 +25,22 @@ section{
   min-height: 100%;
 }
 
+.section-title{
+  font-size:18px;
+  font-weight: 600;
+  font-family: 'quicksand', sans-serif;
+
+  letter-spacing: 2px;
+
+  line-height: 3;
+}
+
+.section-title span{
+  color:rgb(230, 111, 192);
+  font-size: larger;
+  font-weight: bold;
+}
+
 .hero{
   display: flex;
   justify-content: center;
@@ -89,7 +105,7 @@ section{
   padding-bottom: 60px;
 }
 
-.my-work-button{
+.btn{
   background: linear-gradient(to left,
   rgb(168, 237, 8), 
   rgb(202, 74, 155)) ;
@@ -100,7 +116,7 @@ section{
   padding: 2px;
 }
 
-.my-work-button button{
+.btn button{
   color: white;
   border: none;
   background-color: rgb(17 17 17);

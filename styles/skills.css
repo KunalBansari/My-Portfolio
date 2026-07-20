@@ -1,18 +1,28 @@
 .skills{
-    height: 100vh;
-
+    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center; 
     align-items: center;     
-    margin : auto;
+    row-gap: 50px;
    
+}
+
+.skills-feature-section{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
 }
 
 .skills-card{
   /* background-color: rgba(0, 119, 230, 0.537); */
   display: flex;
+  /* width: 0%; */
+
   column-gap: 40px;
-  width: 100%;
+  row-gap: 40px;
+  columns: 4;
+  flex-wrap: wrap;
   
   justify-content: center;
   align-items: flex-start;
@@ -22,22 +32,24 @@
   /* padding: 20px 20px; */
 }
 
-.skills-domain-card{
-  background-color: rgba(0, 119, 230, 0.537);
-  width: 90%;
-  max-width: 175px;
+.domain-card{
+  width: 80%;
+  max-width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   row-gap: 20px;
-
-  border-radius: 30px;
-  padding: 20px 20px;
+  
+  background: rgba(36, 35, 35, 0.249);  width: 90%;
+  border-radius: clamp(2px, 4vw, 10px);
+  border: 2px rgb(62, 60, 60) solid;
+  color: rgb(198, 198, 198);
+  padding: 12px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.25);
 }
 
-.skills-tech-section{
+.domain-tech-section{
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -45,7 +57,7 @@
 
 }
 
-.skills-tech-section div{
+.domain-tech-section div{
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -55,7 +67,7 @@
   /* padding-top: 1px */
 }
 
-.skills-tech-icon{
+.domain-tech-icon{
   border-radius: 100px;
   border: 2px solid rgb(158 158 158);
   width: 30px;

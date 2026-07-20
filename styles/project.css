@@ -1,14 +1,25 @@
 .project{
   position: relative;
   width: 100%;
-  max-width: 800px;
-  height: 100vh;
-  margin: auto;
+  min-height: 90%;
 
   display: flex;
   justify-content: center; 
-  align-items: center;     
-  min-height: 100vh; 
+  align-items: center; 
+       
+}
+
+.project-feature-section{
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 100px;
+  font-size: 18px;
+}
+
+.project-btn{
+  width: 80%;
 }
 
 .left-arrow, .right-arrow{
@@ -42,10 +53,10 @@
 }
 
 .viewport{
-  width: 100%;
-  max-width: 900px;
-  height: 520px;     /* MUST match card area */
-  
+  width: 70%;
+
+  display: flex;
+  justify-content: center;
   position: relative;
   /* make the child conatiner position related to the viewport or parent */
   /* using relative only, page feels like it is still there even if it is moved */
@@ -57,78 +68,42 @@
   transform: translate(-50%, -50%);
   position: absolute;
 
-  max-width: 240px;
   width: 70%;
-
+  max-width: 250px;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   
   
-  /* width: clamp(200px, 40%, 300px);  */
-  box-shadow: 0 8px 24px rgba(0,0,0,0.25);  
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25); 
+  border: 2px rgb(62, 60, 60) solid; 
   
   
-  background: rgba(0, 119, 230, 0.537); /* sky blue with transparency */
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(36, 35, 35, 0.249); /* sky blue with transparency */
   
   color: rgb(198, 198, 198);
   
-  border-radius: clamp(8px, 4vw, 15px);
-  padding: clamp(5px, 2vw, 10px);
+  border-radius: clamp(2px, 4vw, 10px);
+  padding: 15px;
   transition: 0.3s;
 } 
 
-.project-picture-section{
-  max-height: 140px;
-  height: auto;
+.project-card-picture-section{
+  display: flex;
+  justify-content: center;
   /* background: rgba(0, 120, 230, 0); */
 }
 
-.project-picture{
-  border-radius: clamp(2px, 3vw, 10px);
-  object-fit: contain;
+.project-card-picture{
+  border-radius: clamp(2px, 3vw, 5px);
+
   width: 100%;
-  height: 100%;
-  aspect-ratio:16/9;
+  /* aspect-ratio:16/9; */
 
 }
 
-.role-center {
-  transform: translate(-50%, -50%) scale(1);
-  
-  opacity: 1;
-  z-index: 3;
-  
-}
-
-.role-left {
-  transform: translate(-150%, -50%) scale(.8);
-  opacity: 0.6;
-  z-index: 2;
-}
-
-.role-right {
-  transform: translate(50%, -50%) scale(.8);
-  opacity: 0.6;
-  z-index: 2;
-}
-
-
-.role-hidden {
-  transform: scale(0);
-  opacity: 0;
-  z-index: 1;
-  pointer-events: none;
-}   
-
-.project-tech-desc-section{
-  padding-top: 5px;
-  font-weight: 600;
-}
-
-.project-skill-set-section{
+.project-card-skill-section{
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
@@ -136,7 +111,7 @@
 
 }
 
-.project-skill-used{
+.project-card-skill{
   
   background: rgba(0, 0, 0, 0.05);
   border: 2px solid rgb(158, 158, 158);
@@ -150,6 +125,33 @@
   font-weight: 100;
 }
 
+.role-center {
+  transform: translate(-50%, -50%);
+  
+  opacity: 1;
+  z-index: 3;
+  
+}
+
+.role-left {
+  transform: translate(-165%, -50%);
+  opacity: 0.6;
+  z-index: 2;
+}
+
+.role-right {
+  transform: translate(65%, -50%);
+  opacity: 0.6;
+  z-index: 2;
+}
+
+
+.role-hidden {
+  transform: scale(0);
+  opacity: 0;
+  z-index: 1;
+  pointer-events: none;
+} 
 
 
 

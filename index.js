@@ -1,3 +1,29 @@
+const originalShape={
+  M:[15.079,43.239],
+    C:[
+      [[19.746,43.722],[26.836,43.486],[30.313,37.091]],
+      [[31.723,35.045],[32.211,27.171],[30.053,21.855]],
+      [[27.895,16.539],[26.474,13.487],[23.895,10.908]],
+      [[22.105,9.013],[19.526,7.592],[15.211,8.434]],
+      [[12.368,9.171],[11.737,9.592],[8.789,12.803]],
+      [[6.842,14.750],[5.263,17.013],[3.053,21.329]],
+      [[0,26.961],[-0.037,32.344],[1.416,35.868]],
+      [[3.957,41.976],[12.482,42.949],[14.947,43.240]]
+  ]};
+
+const elongatedShape={
+  M:[15.079,43.239],
+  C:[
+    [[19.746,43.722],[26.836,43.486],[29.209,34.545]],
+    [[29.922,31.786],[30.426,26.653],[28.632,18.645]],
+    [[28.075,16.065],[27.579,12.855],[23.421,3.855]],
+    [[22.421,1.487],[20.105,-0.408],[14.474,-0.197]],
+    [[10.158,0.434],[9.632,2.697],[7.842,4.750]],
+    [[6.316,6.855],[6.053,8.329],[5.158,10.329]],
+    [[0,26.961],[2.079,29.980],[2,32.013]],
+    [[3.957,41.976],[12.482,42.949],[14.947,43.240]]
+  ]};
+
 const nav = document.getElementById("middle-section");
 const ham = document.getElementById("ham-logo")
 ham.addEventListener('click', () =>{
@@ -83,11 +109,10 @@ updateSliderUI();
 window.addEventListener("resize", placeArrows);
 
 
-dragDrop();
-
 
 function dragDrop(){
   let isDragging = 0;
+  
   let startX = 0;
   let diffX = 0;
   let endX = 0;
@@ -127,7 +152,7 @@ function dragDrop(){
   });
   
   window.addEventListener('mouseup', (event) =>{
-
+    
     isDragging = 0;
     diffX = 0;
     
@@ -135,7 +160,7 @@ function dragDrop(){
     circle.style.transform = 'translateX(0px)';
     hideArrow.classList.remove("hidden");
     // fadeMain.classList.add("fades-out");
-
+    
     
     const hideContact = document.querySelector(".close-btn");
     hideContact.addEventListener("click", () => {
@@ -143,10 +168,11 @@ function dragDrop(){
       fadeMain.classList.remove("fades-out");
 
     });
-
+    
   });  
-
+  
 }
+dragDrop();
 
 function drawCurve(){
   const points = [
@@ -269,3 +295,81 @@ ctx.stroke();
 }
 drawCurve();
 
+// const doodle = document.querySelector('.doodle-icon');
+
+function dragPop(){
+  
+  const constraint = document.querySelector('.skills-card');
+  let animationStart = null;
+  let animationEnd;
+  window.addEventListener('scroll', (event) =>{
+    const rect = constraint.getBoundingClientRect();
+    const constraintBottom = rect.bottom;
+    // const total = scrollY + constraintBottom;
+   
+    const totalWindow = document.documentElement.scrollHeight;
+
+    
+    if(animationStart === null && constraintBottom >= 710 && constraintBottom <= 730 ){
+      animationStart = totalWindow-scrollY;
+    }
+
+
+    const range = 100;
+    animationEnd = animationStart - range;
+    const current = Math.max(animationEnd,(document.documentElement.scrollHeight - scrollY));
+
+    const progress = Math.max(0,(animationStart - current) / range);
+    const easedProgress =
+    progress * progress * (3 - 2 * progress);
+    elongateShape(easedProgress);
+
+    if(document.documentElement.scrollHeight === (window.innerHeight + window.scrollY))
+      shrinkShape();
+  });
+}
+dragPop();
+
+function elongateShape(progress){
+  // debugging here for the d
+  const path = document.getElementById('shape');
+  // console.log(path);
+  let d = `M${originalShape.M[0]}, ${originalShape.M[1]}`;
+
+
+  let points = [];
+  for(let i = 0; i<8; i++){
+    for(let j = 0; j < 3; j++){
+      const current = interpolatePoint(originalShape.C[i][j], elongatedShape.C[i][j], progress);
+      points.push(current);
+    }
+  }
+  // console.log(points);
+
+  for(let i = 0; i < 24; i++){
+    if((i) % 3 === 0){
+      d += ` C${points[i][0]},${points[i][1]}
+      ${points[i+1][0]},${points[i+1][1]}
+      ${points[i+2][0]},${points[i+2][1]}`;
+      
+    }
+  }
+
+  path.setAttribute("d", d);
+
+}
+
+function interpolatePoint(x, y, progress) {
+
+    return [
+        x[0] + (y[0] - x[0]) * progress,
+        x[1] + (y[1] - x[1]) * progress,
+
+    ];
+}
+elongateShape();
+
+function shrinkShape(){
+  console.log("hey");
+}
+shrinkShape();

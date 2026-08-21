@@ -61,6 +61,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .card-2 img,
@@ -82,9 +83,9 @@
   scrollbar-width: none;
   overflow-y: auto;
 
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap:16px; */
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

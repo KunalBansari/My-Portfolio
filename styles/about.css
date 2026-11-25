@@ -1,8 +1,7 @@
 .about{
-  min-height: 90%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .about-container{
@@ -10,7 +9,7 @@
   /* margin:auto; */
   display:flex;
   justify-content:center;
-  align-items:flex-start;
+  align-items:center;
   gap:80px;
 }
 
@@ -18,7 +17,7 @@
   flex:0.8;
   display:flex;
   justify-content: left;
-  align-items:center;
+  align-items: center;
 }
 
 .about-image img{

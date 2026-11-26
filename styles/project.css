@@ -7,11 +7,6 @@
   align-items: center; 
 }
 
-p{
-  margin : 0;
-  width: 100%;
-}
-
 .inner-project{
   width: 70%;
   row-gap: 40px;

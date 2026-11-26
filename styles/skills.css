@@ -1,9 +1,9 @@
 .skills{
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;     
-    row-gap: 50px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  /* row-gap: 50px;  */
     /* z-index: -9999;   */
 }
 
@@ -12,42 +12,33 @@
   row-gap: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: top; 
+  justify-content: flex-start; 
   align-items: center; 
 }
 
 .skills-feature-section{
-  /* display: flex;
-  justify-content: center; */
+  width: 100%;
   font-size: 12px;
   text-align: center;
 }
 
 .skills-card {
+  min-width: 80%;
   display: flex;
-  align-items: center;
   justify-content: center;
 
   column-gap: 16px;
-
 }
 
 .skills-left {
-  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+  width: 144px;
+  height : 384px;
   gap: 16px;
-}
 
-.more-left-cards{
-  display: flex;
-  align-items: center;
-  column-gap: 16px;
-  justify-content: center;
-  width: 100%;
 }
 
 .skill-card{
@@ -56,16 +47,33 @@
 }
 
 .card-1 {
-  padding: 25px 0;
   width: 100%;
+  height: 324px;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   transform-origin: center;
+
+
+  font-size: 27px;
+  line-height: 1.2;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.more-left-cards{
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  justify-content: center;
 }
 
 .card-2,
 .card-3 {
   flex: 1;
+  width: 64px;
   height: 60px;
   display: flex;
   justify-content: center;
@@ -80,15 +88,15 @@
 }
 
 .card-4 {
-  flex: 3;
+  min-width: 80%;
   padding: 16px;
+  background-color: blueviolet;
+
 }
 
 .skills-list {
-  /* height: 0; */
 
-
-  height: 300px;
+  /* height: 300px; */
   scrollbar-width: none;
   overflow-y: auto;
 
@@ -99,6 +107,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: 60px;
+  place-items: center;
   gap: 15px;
 }
 
